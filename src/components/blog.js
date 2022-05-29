@@ -1,29 +1,36 @@
-import React, { Component }  from 'react';
+import React, { Component, useState }  from 'react';
 import axios from 'axios';
 
-export default class BlogContainer extends Component {
-    constructor() {
+import BlogPost from './blog-post';
+
+export default class Blog extends Component {
+    constructor(props) {
         super();
         
         this.state = {
-            blogItems: []
+                title: "",
+                review: ""
         }
 
-        this.getBlogItems = this.blogItems.bind(this)
+        this.blogPosts = this.blogPosts.bind(this);
     }
 
-    // getBlogEntry() {
-    //     axios.get("")
-    // }
+    blogPosts() {
+        const data = [["White Walls", "BTBAM"], ["Vela, Together We Await The Storm", "The Human Abstract"], ["Digital Veil", "The Human Abstract"]];
 
-    // getBlogItems() {
-    //     axios.get("")
-    // }
+        return data.map(song => {
+            return <BlogPost />
+        })
+    }
+
+
+
 
     render() {
+        
         return (
-            <div className="blog-entry">
-                {/* {getBlogEntry} */}
+            <div>
+                {this.blogPosts()}
             </div>
         )
     }

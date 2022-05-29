@@ -1,20 +1,29 @@
 import React from 'react';
-// import logo from '';
-import './style/App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import img from './imgs/first-logo.png';
+import './style/App.scss';
 
 import Navbar from './components/navbar';
+import Home from './components/home';
+import Blog from './components/blog';
 
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <div>
-        {/* <Blog /> */}
-        {/* SS Music Blog header I want the same on every page */}
-        {/* 2 Navlinks below header, Home, Reviews centered transition dark gray to irradescent blue */}
-        {/* Discovered Song of The Week with an iframe link to the song on spotify */}
-      </div>
+      <img src={img} className="app-logo" alt="logo"/>
+      
+      
+        <div>
+          <Navbar />          
+          
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/blog" element={<Blog/>}/>
+          </Routes>
+        </div>
+      
     </div>
   );
 }
