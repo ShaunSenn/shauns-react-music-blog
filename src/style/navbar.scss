@@ -1,7 +1,29 @@
-// .navbar {
-//     display: grid;
-// }
+.navbar {
+    padding: 10px 10px;
+}
 
-// .links {
-//     text-decoration: none;
-// }
+.links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .link {
+
+        .navlink {
+            text-decoration: none;
+            color: black;
+            font-weight: 700;
+            font-size: 20px;
+
+            &:hover {
+                color: goldenrod;
+                transition: 1s;
+            }
+        }
+
+        .navlink :hover {
+
+        }
+
+
+    }
+}

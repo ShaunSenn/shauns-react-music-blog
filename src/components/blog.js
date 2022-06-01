@@ -7,19 +7,18 @@ export default class Blog extends Component {
     constructor(props) {
         super();
         
-        this.state = {
-                title: "",
-                review: ""
-        }
-
-        this.blogPosts = this.blogPosts.bind(this);
+        this.state = { //The initial state is where I bring in my live data from my API
+                data: [
+                    {songTitle: "White Walls", musician: "Between The Buried and Me", genre: "Metal", review:"needs a review"}, 
+                    {songTitle: "Last Living Souls", musician: "Gorillaz", genre: "Alternative- Multi Genre", review:"needs a review"}, 
+                    {songTitle: "Digital Veil", musician: "The Human Abstract", genre: "Metal", review:"needs a review"}
+                ]
+        };
     }
 
     blogPosts() {
-        const data = [["White Walls", "BTBAM"], ["Vela, Together We Await The Storm", "The Human Abstract"], ["Digital Veil", "The Human Abstract"]];
-
-        return data.map(song => {
-            return <BlogPost />
+        return this.state.data.map(post => {
+            return <BlogPost title={post.songTitle} artist={post.musician} genre={post.genre} content={post.review}/>
         })
     }
 

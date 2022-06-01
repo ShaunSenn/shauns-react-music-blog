@@ -1,11 +1,27 @@
-import React, { Component, useState} from "react";
+import React from "react";
 
 export default function BlogPost(props) {
     return (
         <div>
-            <h4>Blog Posts</h4>
-            <div>{props.title}</div>
-            <div>{props.review}</div>
+            <div>
+                <h4>Song Name:</h4> 
+                {props.title}
+            </div>
+            
+            <div>
+                <h4>Artist:</h4> 
+                {props.artist}
+            </div>
+
+            <div>
+                <h4>Genre:</h4>
+                {props.genre}
+            </div>
+            
+            <div>
+                <h4>Review</h4>
+                {props.content}
+            </div>
         </div>
     )
 }

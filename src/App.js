@@ -12,12 +12,11 @@ import Blog from './components/blog';
 function App() {
   return (
     <div className="App">
+
       <img src={img} className="app-logo" alt="logo"/>
-      
-      
-        <div>
-          <Navbar />          
-          
+      <Navbar />  
+
+        <div className='app-header'>
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/blog" element={<Blog/>}/>
