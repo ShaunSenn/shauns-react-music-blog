@@ -17,7 +17,9 @@ export default function Home() {
                     <div className='square'>
                         <h3>Enjoy a short clip of my song of the week below!</h3>
                     </div>
-                    <iframe title="Drassanes" src="https://open.spotify.com/embed/track/2jzeP1ysUBZzpNS4DW9DGK?utm_source=generator&theme=0" width="35%" height="80" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    <div className='square'>
+                        <iframe title="Drassanes" src="https://open.spotify.com/embed/track/2jzeP1ysUBZzpNS4DW9DGK?utm_source=generator&theme=0" width="200px" height="80" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </div>
                 </div>
                 {/* refer to the html generator lessons; figure out how to inject http source property src="http source code for song" dynamically */}
 

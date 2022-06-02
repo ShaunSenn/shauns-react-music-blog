@@ -17,12 +17,13 @@ export default class Blog extends Component {
     }
 
     getBlogPosts() {
-        fetch('https://capstone-music-blog.herokuapp.com')
+        axios
+        .fetch('https://sbs-music-blog-sqlite-api.herokuapp.com/blogs')
         .then(response => {
             // handle success
             console.log("Response Successful", response);
             this.setState({
-                data: response.data.blog_posts //blog_posts data collection needs to be created on the backend for this to return anything
+                data: response //blog_posts data collection needs to be created on the backend for this to return anything
             })
         })
         .catch(error => {

@@ -3,9 +3,19 @@
     grid-template-columns: 1fr 1fr;
 }
 
+.square {
+    // HAVE THE SQUARES STACK ON TOP OF EACH OTHER FOR MOBILE DEVICES
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    border: 5px solid black;
+    padding: 20px;
+    margin: 20px;
+}
 .left-column {
-    border: 5px;
-    color: black;
+
 }
 
 .right-column {
