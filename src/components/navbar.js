@@ -9,7 +9,6 @@ export default function Navbar() {
             
             <div className='links'>
 
-                {/* text-decoration: none for links below */}
                 <div className='link'>
                     <NavLink className={'navlink'} exact to="/">Home</NavLink>
                 </div>

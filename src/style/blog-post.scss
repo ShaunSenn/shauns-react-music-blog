@@ -1,0 +1,12 @@
+.blog-post {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+
+    .attribute {
+        padding: 20px;
+        text-align: left;
+        width: 80px;
+        height: 200px;
+    }
+}

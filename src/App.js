@@ -5,9 +5,8 @@ import img from './imgs/first-logo.png';
 import './style/App.scss';
 
 import Navbar from './components/navbar';
-import Home from './components/home';
-import Blog from './components/blog';
-
+import Home from './components/parent_pages/home';
+import Blog from './components/parent_pages/blog'
 
 function App() {
   return (
