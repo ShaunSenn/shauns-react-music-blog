@@ -9,10 +9,10 @@ export default function Navbar() {
             
             <div className='links'>
 
-                <div className='link'>
+                <div className='home-link'>
                     <NavLink className={'navlink'} exact to="/">Home</NavLink>
                 </div>
-                <div className='link'>
+                <div className='blog-link'>
                     <NavLink className={'navlink'} to="/blog">Blog</NavLink>
                 </div>
 
