@@ -15,9 +15,11 @@
         align-items: center;
         text-align: left;
         height: 30px;
+    }
+}
 
-        .attribute-name {
-            
-        }
+@media (max-width: 45em) {
+    .blog-post-wrapper {
+        max-width: 260px;
     }
 }
