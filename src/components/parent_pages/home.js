@@ -6,16 +6,16 @@ export default function Home() {
 
                 <div className='left-column'>
                     <div className='square-container'> 
-                        <h3>Welcome to my music blog home page, I'm so glad you could join me!</h3>
+                        <p>Welcome to my music blog home page, I'm so glad you could join me!</p>
                     </div>
                     <div className='square-container'>
-                        <h3>This is a simple resource to check out my personal music recommendations. Enjoy!</h3>
+                        <p>This is a simple resource to check out my personal music recommendations. Enjoy!</p>
                     </div>
                 </div>
                 
                 <div className='right-column'>
                     <div className='square-container'>
-                        <h3>Enjoy a short clip of my song of the week below!</h3>
+                        <p>Enjoy a short clip of my song of the week below!</p>
                     </div>
                     <div className='square-container'>
                             <iframe title="id" src="https://open.spotify.com/embed/track/2jzeP1ysUBZzpNS4DW9DGK?utm_source=generator&theme=0" width="200px" height="80" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>

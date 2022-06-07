@@ -1,7 +1,7 @@
 .home-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 800px;
+    min-width: 600px;
     justify-items: center;
     justify-content: center;
 }
@@ -21,6 +21,7 @@
     border-bottom: 1px solid black;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+    font-size: 16px;
     
     
 
@@ -28,14 +29,17 @@
         transition: ease-in-out 1.2s;
         border-bottom: 1px solid black;
         border-radius: 25px;
-        box-shadow: 0 3px 10px rgb(128, 128, 128 / .6);
+        box-shadow: 0 3px 10px rgb(79, 234, 255 / .6);
+        
 
     } 
 }
 
 @media (max-width: 48em) {
     .home-container{
+        display: grid;
         grid-template-columns: 1fr;
+        width: auto;
     }
 
 
