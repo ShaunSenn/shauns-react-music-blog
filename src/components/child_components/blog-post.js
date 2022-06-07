@@ -13,8 +13,12 @@ export default function BlogPost(props) {
             <div className="blog-post">
                  
                 <div className="attribute">
-                    <h4 style={{width: "60px", marginRight: "10px"}}>Song:</h4> 
-                    <p>{title}</p>
+                    <div className="header">
+                        <h4 style={{width: "60px", marginRight: "10px"}}>Song:</h4> 
+                    </div>
+                    <div className="content">
+                        <p>{title}</p>
+                    </div>
                 </div>
                 
                 <div className="attribute">
