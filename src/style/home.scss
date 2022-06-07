@@ -4,6 +4,7 @@
     width: 600px;
     justify-items: center;
     justify-content: center;
+    margin-top: 45px;
 }
 
 
@@ -38,6 +39,10 @@
         display: grid;
         grid-template-columns: 1fr;
         width: auto;
+    }
+
+    .left-column {
+        margin-top: 20px;
     }
 
     .square-container {
