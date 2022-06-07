@@ -1,7 +1,7 @@
 .home-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    min-width: 600px;
+    width: 600px;
     justify-items: center;
     justify-content: center;
 }
@@ -30,17 +30,17 @@
         border-bottom: 1px solid black;
         border-radius: 25px;
         box-shadow: 0 3px 10px rgb(79, 234, 255 / .6);
-        
-
     } 
 }
 
-@media (max-width: 48em) {
+@media (max-width: 45em) {
     .home-container{
         display: grid;
         grid-template-columns: 1fr;
         width: auto;
     }
 
-
+    .square-container {
+        margin-top: 0px;
+    }
 }

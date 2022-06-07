@@ -1,16 +1,23 @@
 .blog-post-wrapper{
-    padding-bottom: 20px;
-    width: auto;
+    display: grid;
+    // padding-bottom: 20px;
+    width: 600px;
+    margin-top: 45px;
 }
 .blog-post {
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
+    // display: flex;
+    padding: 25px;
     border-top: 2px solid black;
 
     .attribute {
         // padding: 20px;
-        text-align: center;
-        height: 180px;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        height: 30px;
+
+        .attribute-name {
+            
+        }
     }
 }
