@@ -31,7 +31,6 @@ export default class Blog extends Component {
         });
     }
     
-
     blogPosts() {
         return this.state.data.map(post => {
             return (
@@ -47,8 +46,6 @@ export default class Blog extends Component {
         this.getBlogPosts();
     }
 
-
-
     render() {
         if (this.state.loading) {
             return (
@@ -56,17 +53,13 @@ export default class Blog extends Component {
                     <div className="loading">We're on the way with the blogs!</div>
                 </div>
             )
-        }
-
-        else if (this.state.error) {
+        } else if (this.state.error) {
             return (
                 <div>
                     <div className="error">Oh darn, looks like there was an error. Sorry about that!</div>
                 </div>
             )
-        }
-
-        else {
+        } else {
             return (
                 <div className='blog-page'>
                     {this.blogPosts()}
