@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function BlogPost(props) {
 
-    // function toJsx() {
-    // }
+    useEffect(() => {
+        document.title = "Blog Page"
+    })
 
     const { title, artist, genre, review } = props.post;
 
@@ -13,12 +14,8 @@ export default function BlogPost(props) {
             <div className="blog-post">
                  
                 <div className="attribute">
-                    <div className="header">
-                        <h4 style={{width: "60px", marginRight: "10px"}}>Song:</h4> 
-                    </div>
-                    <div className="content">
-                        <p>{title}</p>
-                    </div>
+                    <h4 style={{width: "60px", marginRight: "10px"}}>Song:</h4> 
+                    <p>{title}</p>
                 </div>
                 
                 <div className="attribute">

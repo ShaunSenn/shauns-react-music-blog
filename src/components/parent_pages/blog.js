@@ -1,4 +1,4 @@
-import React, { Component, useState }  from 'react';
+import React, { Component }  from 'react';
 import axios from 'axios';
 
 import BlogPost from '../child_components/blog-post';
@@ -7,7 +7,7 @@ export default class Blog extends Component {
     constructor(props) {
         super(props);
         
-        this.state = { //The initial state is going to be an empty array, I setState with the data brought in by the api call, then I map over the data
+        this.state = {
                 data: [],
                 loading: true
         };
@@ -16,8 +16,7 @@ export default class Blog extends Component {
     getBlogPosts() {
         axios.get('https://shauns-sqlite-music-blog.herokuapp.com/blogs')
         .then(response => {
-            // handle success
-            console.log("Response Successful", response);
+            console.log("Response Successful", response); // Keep for testing; in case an api issue comes up.
             this.setState({
                 data: response.data,
                 loading: false
@@ -25,7 +24,7 @@ export default class Blog extends Component {
         })
         .catch(error => {
             // handle error
-            console.log("Sorry, we encountered a problem", error);
+            console.log("We're encountering a problem", error);
         })
         .then(function () {
             // always executed
@@ -38,11 +37,7 @@ export default class Blog extends Component {
             return (
                 <BlogPost 
                     key={post.id}
-                    post={post} //as a best practice this line does the same thing as the next 4 lines below
-                    // title={post.title} 
-                    // artist={post.artist} 
-                    // genre={post.genre} 
-                    // review={post.review}
+                    post={post}
                 /> 
             )
         })
@@ -58,7 +53,7 @@ export default class Blog extends Component {
         if (this.state.loading) {
             return (
                 <div>
-                    <div className="loading">Loading...</div>
+                    <div className="loading">We're on the way with the blogs!</div>
                 </div>
             )
         }
@@ -66,7 +61,7 @@ export default class Blog extends Component {
         else if (this.state.error) {
             return (
                 <div>
-                    <div className="error">An error occured... Please try again later.</div>
+                    <div className="error">Oh darn, looks like there was an error. Sorry about that!</div>
                 </div>
             )
         }
@@ -79,14 +74,4 @@ export default class Blog extends Component {
             )
         }
     }
-    // render() {
-        
-    //     return (
-    //         <div>
-                
-    //              <h1>Welcome to my Blog page!</h1>
-    //              {this.blogPosts()}
-    //         </div>
-    //     )
-    // }
 }
