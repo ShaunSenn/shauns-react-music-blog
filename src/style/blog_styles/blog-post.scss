@@ -1,6 +1,5 @@
 .blog-post-wrapper{
     display: grid;
-    // padding-bottom: 20px;
     width: 600px;
     margin-top: 45px;
 }
@@ -9,17 +8,23 @@
     padding: 25px;
     border-top: 2px solid black;
     max-width: 100%;
-
-    .attribute {
-        display: flex;
-        align-items: center;
-        justify-items: center;
-        text-align: left;
-        width: 100%;
-        height: 30px;
-        padding: 10px;
-    }
 }
+
+.attribute {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: left;
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+}
+
+.attribute h4 {
+    width: 60px;
+    margin-right: 10px;
+}
+
 
 @media (max-width: 45em) {
     .blog-post-wrapper {

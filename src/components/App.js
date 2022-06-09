@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import img from '../imgs/first-logo.png';
-import '../style/App.scss';
+import '../style/main.scss';
 
 import Navbar from './navbar/navbar';
 import Home from './parent_pages/home';

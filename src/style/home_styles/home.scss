@@ -3,13 +3,11 @@
     grid-template-columns: 1fr 1fr;
     width: 600px;
     justify-items: center;
-    justify-content: center;
     margin-top: 45px;
 }
 
 
 .square-container {
-    // HAVE THE SQUARES STACK ON TOP OF EACH OTHER FOR MOBILE DEVICES
     display: flex;
     justify-content: center;
     align-items: center;
