@@ -21,7 +21,7 @@ export default function Home() {
                         <p>Enjoy a short clip of my top song of the week below!</p>
                     </div>
                     <div className='square-container'>
-                        <iframe title="Title Song 1" src="https://open.spotify.com/embed/track/2jzeP1ysUBZzpNS4DW9DGK?utm_source=generator&theme=0" width="200px" height="80" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        <iframe title="Title Song 1" src="https://open.spotify.com/embed/track/2jzeP1ysUBZzpNS4DW9DGK?utm_source=generator&theme=0" width="240px" height="80" frameBorder="1" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                     </div>
                 </div>
             </div>
